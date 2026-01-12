@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ========== Animate Elements on Scroll ==========
     const animateOnScroll = () => {
-        const elements = document.querySelectorAll('.service-card, .contact-info-item, .about-text');
+        const elements = document.querySelectorAll('.service-card, .contact-info-item, .about-text, .profile-image, .profile-info');
 
         elements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Initialize animation styles
-    document.querySelectorAll('.service-card, .contact-info-item, .about-text').forEach(element => {
+    document.querySelectorAll('.service-card, .contact-info-item, .about-text, .profile-image, .profile-info').forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(30px)';
         element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';

@@ -210,6 +210,84 @@ section {
     flex: 1;
 }
 
+/* Profile Section */
+.profile {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.profile-content {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    flex: 0 0 300px;
+}
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border: 5px solid var(--accent-color);
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.profile-info h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.profile-info .credentials {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.profile-description {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.profile-highlights {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-light);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border-left: 3px solid var(--accent-color);
+}
+
+.highlight-item i {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.highlight-item span {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 /* Services */
 .services-grid {
     display: grid;
@@ -338,5 +416,34 @@ footer .logo img {
 
     .contact-container {
         grid-template-columns: 1fr;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .profile-image {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+    .profile-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-info h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .profile-info .credentials {
+        text-align: center;
+    }
+
+    .profile-highlights {
+        justify-content: center;
     }
 }
